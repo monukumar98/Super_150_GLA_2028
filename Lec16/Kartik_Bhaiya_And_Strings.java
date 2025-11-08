@@ -20,7 +20,7 @@ public class Kartik_Bhaiya_And_Strings {
 				flip++;
 			}
 			// window shrink
-			while (flip > k) {
+			while (flip > k && si <= ei) {
 				if (str.charAt(si) == ch) {
 					flip--;
 				}
