@@ -54,6 +54,7 @@ public class Find_the_Minimum_Area_to_Cover_All_Ones_I2 {
 						+ Find_the_Minimum(grid,i+1,j+1,n-1,m-1 ));
 			}
 		}
+		return res;
 
 	}
 
