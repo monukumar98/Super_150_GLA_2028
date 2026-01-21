@@ -7,6 +7,7 @@ public class Board_Path {
 		int n = 4;
 		Path(n, 0, "");
 
+		
 	}
 
 	public static void Path(int n, int curr, String ans) {
@@ -20,6 +21,8 @@ public class Board_Path {
 		for (int dice = 1; dice <=3; dice++) {
 			Path(n, curr + dice, ans + dice);
 		}
+		
+		
 //		Path(n, curr + 1, ans + 1);
 //		Path(n, curr + 2, ans + 2);
 //		Path(n, curr + 3, ans + 3);
