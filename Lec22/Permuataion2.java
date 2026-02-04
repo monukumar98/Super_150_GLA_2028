@@ -16,9 +16,21 @@ public class Permuataion2 {
 		}
 		for (int i = 0; i < ques.length(); i++) {
 			char ch = ques.charAt(i);
-			String s1 = ques.substring(0, i);
-			String s2 = ques.substring(i + 1);
-			print(s1 + s2, ans + ch);
+			if (!Is_Present(ques, ch, i + 1)) {
+				String s1 = ques.substring(0, i);
+				String s2 = ques.substring(i + 1);
+				print(s1 + s2, ans + ch);
+			}
 		}
+	}
+
+	public static boolean Is_Present(String str, char ch, int idx) {
+		for (int i = idx; i < str.length(); i++) {
+			if (str.charAt(i) == ch) {
+				return true;
+			}
+
+		}
+		return false;
 	}
 }
